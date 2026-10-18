@@ -1,0 +1,12 @@
+name: magenet
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.25
+  - pip
+  - pip:
+      - torch==2.8.0
+      - numpy==2.0.1
+      - scipy==1.13.1
+      - pandas==2.3.3
+      - scikit-learn==1.6.1
