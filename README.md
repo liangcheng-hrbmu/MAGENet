@@ -68,37 +68,3 @@ python -m example.test --data my_data.npz --checkpoint outputs/my_run/model.pt
 python -m example.analyze_nodes --data my_data.npz --checkpoint outputs/my_run/model.pt
 python -m example.analyze_paths --data my_data.npz --checkpoint outputs/my_run/model.pt
 ```
-
-## Files
-
-```text
-MAGENet/
-├── README.md                  Usage and input format
-├── environment.yml            Dependencies
-├── .gitignore                 Generated-file exclusions
-├── data/
-│   ├── example.npz            Expression, labels, splits and binary masks
-│   └── DATASETS.md            Dataset and association download links
-├── model/
-│   ├── __init__.py            Model exports
-│   ├── network.py             MAGENet architecture
-│   ├── builder.py             Model construction
-│   ├── components.py          Gene encoding, normalization and readout
-│   ├── attention.py           Source capacity and edge allocation
-│   ├── context.py             Virtual metabolite context
-│   ├── residual.py            Expression residual branch
-│   ├── config.py              Internal defaults
-│   ├── data.py                Input validation and preprocessing
-│   ├── training.py            Optimization and checkpoint selection
-│   ├── checkpoint.py          Model saving and loading
-│   ├── evaluate.py            Prediction and evaluation
-│   ├── attribution.py         Node attribution and ranking
-│   └── paths.py               Path messages and PCS
-└── example/
-    ├── __init__.py            Example package
-    ├── common.py              Shared input handling
-    ├── train.py               Training example
-    ├── test.py                Testing example
-    ├── analyze_nodes.py       Node analysis example
-    └── analyze_paths.py       Path analysis example
-```
